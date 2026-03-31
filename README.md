@@ -99,21 +99,21 @@ gesture-hero/
 Configuration : capteur **6 axes** (ax, ay, az, gx, gy, gz) @ **62 Hz**, fenêtre de **1000 ms** par échantillon. Appareil : `gesture-nano`.
 
 <p align="center">
-  <img src="assets/model/setup_data_acquisition.png" width="70%" alt="Configuration Edge Impulse"/>
+  <img src="assets./setup_data_acquisition.png" width="70%" alt="Configuration Edge Impulse"/>
 </p>
 
 5 labels collectés : **idle**, **up**, **down**, **left**, **right**.
 
 <p align="center">
-  <img src="assets/model/idle_first_sample.png" width="48%" alt="Premier échantillon idle"/>
-  <img src="assets/model/up_samples.png" width="48%" alt="Échantillons up"/>
+  <img src="assets./idle_first_sample.png" width="48%" alt="Premier échantillon idle"/>
+  <img src="assets./up_samples.png" width="48%" alt="Échantillons up"/>
 </p>
 <p align="center">
-  <img src="assets/model/down_samples.png" width="48%" alt="Échantillons down"/>
-  <img src="assets/model/left_samples.png" width="48%" alt="Échantillons left"/>
+  <img src="assets./down_samples.png" width="48%" alt="Échantillons down"/>
+  <img src="assets./left_samples.png" width="48%" alt="Échantillons left"/>
 </p>
 <p align="center">
-  <img src="assets/model/dataset_overview.png" width="70%" alt="Vue d'ensemble du dataset"/>
+  <img src="assets./dataset_overview.png" width="70%" alt="Vue d'ensemble du dataset"/>
 </p>
 
 ---
@@ -123,7 +123,7 @@ Configuration : capteur **6 axes** (ax, ay, az, gx, gy, gz) @ **62 Hz**, fenêtr
 Pipeline : **Time series data** → **Spectral features** → **Classifier**
 
 <p align="center">
-  <img src="assets/model/create_impulse.png" width="70%" alt="Création de l'impulse"/>
+  <img src="assets./create_impulse.png" width="70%" alt="Création de l'impulse"/>
 </p>
 
 ---
@@ -142,8 +142,8 @@ Pipeline : **Time series data** → **Spectral features** → **Classifier**
 | **Total** | **1 237** |
 
 <p align="center">
-  <img src="assets/model/generate_features.png" width="48%" alt="Génération des features"/>
-  <img src="assets/model/features_result.png" width="48%" alt="Features générées — 13ms, 2KB RAM"/>
+  <img src="assets./generate_features.png" width="48%" alt="Génération des features"/>
+  <img src="assets./features_result.png" width="48%" alt="Features générées — 13ms, 2KB RAM"/>
 </p>
 
 > Performance on-device (Cortex-M4F 80MHz) : **13 ms** de traitement, **2 KB** de RAM.
@@ -157,7 +157,7 @@ Architecture : `Input (78 features)` → `Dense (20)` → `Dense (10)` → `Outp
 Paramètres : **30 epochs**, learning rate **0.0005**, CPU.
 
 <p align="center">
-  <img src="assets/model/nn_settings.png" width="70%" alt="Paramètres du réseau de neurones"/>
+  <img src="assets./nn_settings.png" width="70%" alt="Paramètres du réseau de neurones"/>
 </p>
 
 ---
@@ -165,7 +165,7 @@ Paramètres : **30 epochs**, learning rate **0.0005**, CPU.
 ### Étape 5 — Résultats
 
 <p align="center">
-  <img src="assets/model/model_results2.png" width="70%" alt="Résultats du modèle"/>
+  <img src="assets./model_results2.png" width="70%" alt="Résultats du modèle"/>
 </p>
 
 | Métrique   | Valeur |
@@ -180,8 +180,8 @@ Paramètres : **30 epochs**, learning rate **0.0005**, CPU.
 Export en **Arduino library (.zip)** via le compilateur EON. Intégration dans l'IDE Arduino via `Sketch > Include Library > Add .ZIP Library`.
 
 <p align="center">
-  <img src="assets/model/deployment.png" width="48%" alt="Options de déploiement"/>
-  <img src="assets/model/export_success.png" width="48%" alt="Export Arduino library réussi"/>
+  <img src="assets./deployment.png" width="48%" alt="Options de déploiement"/>
+  <img src="assets./export_success.png" width="48%" alt="Export Arduino library réussi"/>
 </p>
 
 ---
