@@ -214,5 +214,3 @@ Export en **Arduino library (.zip)** via le compilateur EON. Intégration dans l
 - Exaucé A.
 - Mondoukpè A.
 - Adebayo E.
-of the Motion Masters
-- **Dates** : 28-29 Mars 2026
