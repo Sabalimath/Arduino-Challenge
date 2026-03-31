@@ -1,6 +1,6 @@
 # Gesture Hero — Rise of the Motion Masters
 
-> Contrôle un véhicule dans **Beach Buggy Racing** uniquement avec des gestes de la main — sans jamais toucher un clavier.
+> Contrôle un véhicule dans **Beach Buggy Racing** uniquement avec des gestes de la carte ARDUINO ( qui devient une forme de gamepad ) — sans jamais toucher le clavier.
 
 Projet réalisé lors du **Hackathon Arduino Days 2026 - Cotonou**.
 
