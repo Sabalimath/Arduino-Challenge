@@ -9,11 +9,11 @@ Projet réalisé lors du **Hackathon Arduino Days 2026 - Cotonou**.
 ## Le jeu : Beach Buggy Racing
 
 <p align="center">
-  <img src="assets/bbr_gameplay2.webp" width="45%" alt="Beach Buggy Racing - départ"/>
-  <img src="assets/bbr_gameplay1.webp" width="45%" alt="Beach Buggy Racing - course"/>
+  <img src="assets./bbr_gameplay2.webp" width="45%" alt="Beach Buggy Racing - départ"/>
+  <img src="assets./bbr_gameplay1.webp" width="45%" alt="Beach Buggy Racing - course"/>
 </p>
 <p align="center">
-  <img src="assets/bbr_splitscreen.webp" width="60%" alt="Beach Buggy Racing - multijoueur"/>
+  <img src="assets./bbr_splitscreen.webp" width="60%" alt="Beach Buggy Racing - multijoueur"/>
 </p>
 
 ---
