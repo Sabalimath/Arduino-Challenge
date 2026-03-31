@@ -6,6 +6,19 @@ Projet réalisé lors du **Hackathon Arduino Days 2026 - Cotonou**.
 
 ---
 
+## Documentation interactive
+
+> Une documentation web complète du projet est disponible ici :
+> ### [gesture-hero-original.vercel.app](https://gesture-hero-original.vercel.app/)
+
+Elle couvre :
+- L'architecture technique complète (Arduino → Python → jeu)
+- Les étapes d'implémentation pas à pas
+- Les performances du modèle (90.3% accuracy, matrice de confusion)
+- Les défis rencontrés et solutions appliquées
+
+---
+
 ## Le jeu : Beach Buggy Racing
 
 <p align="center">
@@ -183,11 +196,23 @@ Export en **Arduino library (.zip)** via le compilateur EON. Intégration dans l
   <img src="assets./deployment.png" width="48%" alt="Options de déploiement"/>
   <img src="assets./export_success.png" width="48%" alt="Export Arduino library réussi"/>
 </p>
-
 ---
 
 ## Hackathon
 
 - **Événement** : Arduino Days 2026 — Cotonou
 - **Défi** : Gesture Hero — Rise of the Motion Masters
+- **Dates** : 28-29 Mars 2026
+
+---
+
+## Team — Innovators Hub
+
+- Gilchrist V.
+- Sabalimatou K.
+- David K.
+- Exaucé A.
+- Mondoukpè A.
+- Adebayo E.
+of the Motion Masters
 - **Dates** : 28-29 Mars 2026
