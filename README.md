@@ -196,7 +196,66 @@ Export en **Arduino library (.zip)** via le compilateur EON. Intégration dans l
   <img src="assets./deployment.png" width="48%" alt="Options de déploiement"/>
   <img src="assets./export_success.png" width="48%" alt="Export Arduino library réussi"/>
 </p>
+
 ---
+
+## Caractéristiques techniques du modèle
+
+> Fichier : `ei-gesture-hero-arduino-1.0.3.zip` — généré par Edge Impulse Studio v1.92.3
+
+### Acquisition & prétraitement (DSP)
+
+| Paramètre | Valeur |
+|-----------|--------|
+| Capteur | IMU Fusion (ax, ay, az, gx, gy, gz) — 6 axes |
+| Fréquence d'échantillonnage | 62 Hz (intervalle 16.13 ms) |
+| Taille de la fenêtre | 62 échantillons (≈ 1 s) |
+| Bloc DSP | Spectral Analysis (FFT) |
+| Longueur FFT | 16 points |
+| Overlap FFT | activé |
+| Log-scaling | activé |
+| Ondelette | Daubechies 4 (db4), niveau 1 |
+| Spectral power edges | 0.1 / 0.5 / 1.0 / 2.0 / 5.0 Hz |
+| Nombre de pics spectraux | 3 |
+| Features extraites (sortie DSP) | **78 features** |
+
+### Architecture du réseau de neurones
+
+```
+Input Layer     →  78 features (sortie Spectral Analysis)
+Dense Layer 1   →  20 neurones (ReLU)
+Dense Layer 2   →  10 neurones (ReLU)
+Output Layer    →  5 classes   (Softmax)
+```
+
+Classes : `down` · `idle` · `left` · `right` · `up`
+
+### Entraînement
+
+| Paramètre | Valeur |
+|-----------|--------|
+| Epochs | 30 |
+| Learning rate | 0.0005 |
+| Optimizer | Adam (auto-tuned) |
+| Fenêtres d'entraînement | 1 237 |
+| Accuracy (validation) | **90.3 %** |
+| Loss (validation) | 0.34 |
+| Seuil de confiance | 0.6 |
+
+### Déploiement embarqué
+
+| Paramètre | Valeur |
+|-----------|--------|
+| Moteur d'inférence | TensorFlow Lite (EON Compiler) |
+| Quantification | **INT8** (poids + activations) |
+| Cible | Arduino Nano 33 BLE Sense (Cortex-M4F 80 MHz) |
+| Temps d'inférence | **13 ms** |
+| RAM (TFLite arena) | **3 020 bytes (~3 KB)** |
+| Version du modèle | 3 (deploy v3) |
+| Bibliothèque | `gesture-hero_inferencing` |
+
+---
+
 
 ## Hackathon
 
